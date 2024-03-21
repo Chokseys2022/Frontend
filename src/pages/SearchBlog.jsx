@@ -7,3 +7,5 @@ function SearchBlog() {
 }
 
 export default SearchBlog
+
+//useState - images and summary about blog that link to Read Blog

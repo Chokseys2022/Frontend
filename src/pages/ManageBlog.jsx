@@ -7,3 +7,7 @@ function ManageBlog() {
 }
 
 export default ManageBlog
+
+//crud capabilities
+
+//3rd part API
