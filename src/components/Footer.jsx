@@ -1,13 +1,13 @@
-// Footer.js
+// Footer.jsx
 import React from 'react';
 
+
 const Footer = () => {
-  return (
-    <footer>
-      <p>This is the footer</p>
-    
-    </footer>
-  );
+    return (
+        <footer className="footer">
+            <p>&copy; 2024 BLOGS</p>
+        </footer>
+    );
 };
 
 export default Footer;

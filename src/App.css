@@ -42,32 +42,17 @@
   align-items: center;
 }
 
-.form-container {
-  margin-right: 20px; /* Adjust spacing between form and image */
-}
-
-.image-container img {
-  max-width: 100%; /* Ensure image does not exceed container width */
-}
-
-/* Style form elements */
-.form-group {
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-}
-
-input[type="email"],
-input[type="password"] {
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  margin-top: 5px;
 }
 
-button {
-  padding: 8px 16px;
-  margin-top: 10px;
+.footer p {
+  margin: 0;
 }
+
