@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function ReadBlog() {
   return (
-    <div>ReadBlog</div>
-  )
+    <div>
+      <h1>READ</h1>
+    </div>
+  );
 }
-
-export default ReadBlog
+export default ReadBlog;
 
 //subscribe to newsletter form

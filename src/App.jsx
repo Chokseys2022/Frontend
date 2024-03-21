@@ -1,17 +1,33 @@
 //App.jsx
 import React from "react";
+import { BrowserRouter as Router, Route, Routes,NavLink } from 'react-router-dom';
 import "./App.css";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx"
+import SearchBlog from "./pages/SearchBlog.jsx";
+import ReadBlog from "./pages/ReadBlog.jsx";
+import ManageBlog from "./pages/ManageBlog.jsx";
 
-const App = () => {
+
+function App() {
   return (
-    <div>
-      <Header />
-      <h2>Home Page</h2>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<SearchBlog />} />
+          <Route path="/read" element={<ReadBlog />} />
+          <Route path="/manage" element={<ManageBlog />} />
+          
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
+
+//----------------------------------------END CODE-------------------------------------//

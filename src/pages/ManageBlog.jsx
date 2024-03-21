@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function ManageBlog() {
   return (
-    <div>ManageBlog</div>
-  )
+    <div>
+      <h1>MANAGE</h1>
+    </div>
+  );
 }
 
-export default ManageBlog
+export default ManageBlog;
 
 //crud capabilities
 

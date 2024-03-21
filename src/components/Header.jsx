@@ -1,5 +1,6 @@
 // Header.js
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 const Header = () => {
@@ -7,13 +8,28 @@ const Header = () => {
     <header>
       <nav className="navbar">
         <ul>
-          <li><a href="/" label="Home">Home</a></li>        
-          <li><a href="/about" label="Search Blog">Search Blogs</a></li>
-          <li><a href="/blogs" label="Read Blog">Read Blogs</a></li>
-          <li><a href="/logIn" label="LogIn">Manage Blogs</a></li>
+          <li>
+            <Link to="/" label="Home">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/search" label="Search Blog">
+              Search Blogs
+            </Link>
+          </li>
+          <li>
+            <Link to="/read" label="Read Blog">
+              Read Blogs
+            </Link>
+          </li>
+          <li>
+            <Link to="/manage" label="Manage Blogs">
+              Manage Blogs
+            </Link>
+          </li>
         </ul>
       </nav>
-      <h1>This is the header</h1>
     </header>
   );
 };
