@@ -1,30 +1,27 @@
-
 .navbar {
   background-color: #333;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
 
 .navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; 
+  display: flex;
 }
 
 .navbar ul li {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
-
-
 
 .navbar ul li a {
   color: white;
   text-decoration: none;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 .navbar ul li a:hover {
@@ -88,7 +85,8 @@
   cursor: pointer;
 }
 
-.loading, .error {
+.loading,
+.error {
   margin-top: 20px;
   font-style: italic;
   color: #ff0000;
@@ -113,13 +111,28 @@
 /* styles for the active section on ReadBlog page */
 .active {
   background-color: #f0f0f0;
-  border: 1px solid #ccc; 
-  padding: 10px; 
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 /* styles for the button image searchBlog page */
 .image {
-  width: 200px; /* Adjust the width as per your requirement */
+  width: 150px; /* Adjust the width as per your requirement */
   height: 100px; /* Adjust the height accordingly */
   margin: 10px; /* Add margin for spacing between images */
+  margin-top: 100px; /* Add margin above the images */
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.button {
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
