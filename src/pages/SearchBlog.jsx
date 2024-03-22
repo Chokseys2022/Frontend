@@ -6,21 +6,21 @@ function SearchBlog() {
     <div>
       <h1>SEARCH</h1>
       <div className="button-container">
-        <NavLink to="/read">
-          <img src={"./dance.jpg"} alt="Button 1" />
-          {/* <img src={('./images/dance.jpg')} /> */}
+        <NavLink to="/read#dance-section">
+          <img src={"./dance.jpg"} alt="dance" />
         </NavLink>
-        <NavLink to="/read">
-          <img src="fam.jpg" alt="Button 2" />
+        <NavLink to="/read#fam-section">
+          <img src="fam.jpg" alt="family" />
         </NavLink>
-        <NavLink to="/read">
-          <img src="thought.jpg" alt="Button 3" />
+        <NavLink to="/read#thought-section">
+          <img src="thought.jpg" alt="reflection" />
         </NavLink>
-        <NavLink to="/read">
-          <img src="food.png" alt="Button 4" />
+        <NavLink to="/read#food-section">
+          <img src="food.png" alt="food" />
         </NavLink>
       </div>
     </div>
   );
 }
+
 export default SearchBlog;
