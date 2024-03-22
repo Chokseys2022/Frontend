@@ -29,7 +29,7 @@ function ManageBlog() {
   };
 
   return (
-    <div>
+    <div className="dictionary">
       <h1>Word Information</h1>
       <form onSubmit={handleSubmit}>
         <input 
@@ -38,9 +38,9 @@ function ManageBlog() {
           value={word} 
           onChange={(e) => setWord(e.target.value)} 
         />
-        <button type="submit">Search</button>
+        <button className="dict-button" type="submit">Search</button>
       </form>
-
+  
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {wordData && (
@@ -60,11 +60,11 @@ function ManageBlog() {
               </li>
             ))}
           </ul>
-          {/* You can render other information from the response as needed */}
+         
         </div>
       )}
     </div>
-  );
-}
+  );}
+  
 
 export default ManageBlog;

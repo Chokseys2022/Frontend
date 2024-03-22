@@ -56,3 +56,57 @@
   margin: 0;
 }
 
+/*dictionary*/
+
+.dictionary {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: calc(100% - 85px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dict-button {
+  padding: 3px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loading, .error {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ff0000;
+}
+
+.word-info {
+  margin-top: 20px;
+}
+
+.word-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.word-info p {
+  margin-bottom: 5px;
+}
+
+.word-info ul {
+  padding-left: 20px;
+}
