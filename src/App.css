@@ -110,9 +110,9 @@
 .word-info ul {
   padding-left: 20px;
 }
-/* Define the styles for the active section */
+/* Define the styles for the active section on ReadBlog page */
 .active {
-  background-color: #f0f0f0; /* Set background color */
-  border: 1px solid #ccc; /* Add border */
-  padding: 10px; /* Add padding for better readability */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc; 
+  padding: 10px; 
 }
