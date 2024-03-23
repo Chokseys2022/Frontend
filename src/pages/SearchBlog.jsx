@@ -30,6 +30,8 @@ function SearchBlog() {
           <img className="image" src={foodImage} alt="food" />
           <div>Food</div>
         </NavLink>
+
+        
       </div>
     </div>
   );
