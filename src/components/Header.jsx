@@ -28,6 +28,11 @@ const Header = () => {
               Manage Blogs
             </Link>
           </li>
+          <li>
+            <Link to="/wordsearch" label="Dictionary">
+              Word Search
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
