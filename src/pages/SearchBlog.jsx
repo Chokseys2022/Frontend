@@ -12,9 +12,9 @@ function SearchBlog() {
       <h1 className="search-blog-heading">SEARCH</h1>
 
       <div className="button-container">
-        <NavLink to="/read#dance-section" className="blog-link">
+        <NavLink to="/read#fitness-section" className="blog-link">
           <img className="image" src={danceImage} alt="dance" />
-          <div className="description">Explore articles on various dance forms, tutorials, and dance culture.</div>
+          <div className="description">Explore articles on various fitness forms, tutorials, and fitness culture.</div>
         </NavLink>
 
         <NavLink to="/read#fam-section" className="blog-link">
