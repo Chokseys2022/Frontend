@@ -1,3 +1,38 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif; /* Font family */
+  background-color: #f4f4f4; /* Background color */
+}
+
+/* Container */
+.read-blog-container {
+  max-width: 100px; /* Maximum width */
+  margin: 0 auto; /* Center align */
+}
+
+/* Header */
+.header {
+  text-align: center; /* Text alignment */
+  padding: 20px 0; /* Padding */
+}
+
+.blog-title {
+  font-size: 2rem; /* Title font size */
+  color: #333; /* Title color */
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px; /* Padding */
+}
+
+.section-title {
+  font-size: 1.5rem; /* Title font size */
+  color: darkslategrey; /* Title color */
+  margin-bottom: 10px; /* Margin bottom */
+}
+
+
 /* Navbar styles */
 .navbar {
   background-color: #333; /* Background color */
@@ -70,7 +105,6 @@
 
 }
 
-
 .loading,
 .error {
   margin-top: 20px; /* Margin top */
@@ -95,12 +129,6 @@
   padding-left: 20px; /* Left padding for list */
 }
 
-/* Active section styles on ReadBlog page */
-.active {
-  background-color: #f0f0f0; /* Background color */
-  border: 1px solid #ccc; /* Border */
-  padding: 10px; /* Padding */
-}
 
 /* Button Image SearchBlog page styles */
 .image {
@@ -128,157 +156,19 @@
   flex-direction: column; /* Flex direction */
 }
 
-/* ReadBlog.css */
-
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-  font-family: Arial, sans-serif; /* Font family */
-  background-color: #f4f4f4; /* Background color */
-}
-
-/* Container */
-.read-blog-container {
-  max-width: 800px; /* Maximum width */
-  margin: 0 auto; /* Center align */
-}
-
-/* Header */
-.header {
-  text-align: center; /* Text alignment */
-  padding: 20px 0; /* Padding */
-}
-
-.blog-title {
-  font-size: 2rem; /* Title font size */
-  color: #333; /* Title color */
-}
-
-/* Main Content */
-.main-content {
-  padding: 20px; /* Padding */
-}
-
-.section-title {
-  font-size: 1.5rem; /* Title font size */
-  color: #007bff; /* Title color */
-  margin-bottom: 10px; /* Margin bottom */
-}
-
-.section-content {
-  cursor: pointer; /* Cursor style */
-  color: #666; /* Text color */
-  transition: color 0.3s; /* Transition effect */
-}
-
-.section-content:hover {
-  color: #333; /* Text color on hover */
-}
-
-.active {
-  border-left: 4px solid #007bff; /* Border left for active section */
-  padding-left: 10px; /* Padding left for active section */
-}
-
+/*Searchblog css */
 .search-blog-container {
-  text-align: center; /* Text alignment */
+  text-align: center; /* Text alignment under image on search page */
 }
 
 .search-blog-heading {
   margin-bottom: 20px; /* Margin bottom */
 }
 
-/* ManageBlog.css */
-
-.blog-container {
-  font-family: Arial, sans-serif; /* Font family */
-  max-width: 800px; /* Maximum width */
-  margin: 0 auto; /* Center align */
-}
-
-.blog-header {
-  background-color: #333; /* Background color */
-  color: #fff; /* Text color */
-  padding: 10px; /* Padding */
-  text-align: center; /* Text alignment */
-}
-
-.blog-form {
-  display: flex; /* Display flex */
-  flex-direction: column; /* Flex direction */
-  margin-bottom: 20px; /* Margin bottom */
-}
-
-.blog-form input[type="text"],
-.blog-form textarea {
-  margin-bottom: 10px; /* Margin bottom */
-  padding: 8px; /* Padding */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 4px; /* Border radius */
-  font-size: 16px; /* Font size */
-}
-
-.blog-form button {
-  padding: 10px; /* Padding */
-  border: none; /* No border */
-  border-radius: 4px; /* Border radius */
-  background-color: #007bff; /* Button background color */
-  color: #fff; /* Text color */
-  cursor: pointer; /* Cursor style */
-  transition: background-color 0.3s ease; /* Transition effect */
-  font-size: 16px; /* Font size */
-}
-
-.blog-form button:hover {
-  background-color: #0056b3; /* Button background color on hover */
-}
-
-.blog-table {
-  width: 100%; /* Full width */
-  border-collapse: collapse; /* Collapse border */
-}
-
-.blog-table th,
-.blog-table td {
-  padding: 12px; /* Padding */
-  border: 1px solid #ccc; /* Border */
-  text-align: left; /* Text alignment */
-}
-
-.blog-table th {
-  background-color: #f2f2f2; /* Background color */
-  font-size: 18px; /* Font size */
-}
-
-.blog-table td {
-  background-color: #fff; /* Background color */
-  font-size: 16px; /* Font size */
-}
-
-.blog-table button {
-  padding: 8px; /* Padding */
-  border: none; /* No border */
-  border-radius: 4px; /* Border radius */
-  background-color: #dc3545; /* Button background color */
-  color: #fff; /* Text color */
-  cursor: pointer; /* Cursor style */
-  transition: background-color 0.3s ease; /* Transition effect */
-  font-size: 16px; /* Font size */
-}
-
-.blog-table button:hover {
-  background-color: #c82333; /* Button background color on hover */
-}
-
 /* READBLOG styles */
+
 .read-blog-container {
-  max-width: 800px; /* Maximum width */
+  max-width: 1000px; /* Maximum width */
   margin: 0 auto; /* Center align */
   padding: 20px; /* Padding */
 }
@@ -305,12 +195,16 @@ body {
   transition: background-color 0.3s ease; /* Transition effect */
 }
 
+.section-buttons button:hover{
+  color: greenyellow;
+}
+
 .section-buttons button.active {
-  background-color: #0056b3; /* Button background color for active state */
+  background-color: darkblue; /* Button background color for active state */
 }
 
 .section-content {
-  text-align: center; /* Text alignment */
+  text-align: left; /* Text alignment */
 }
 
 .section-title {
@@ -320,4 +214,5 @@ body {
 
 .section-content p {
   font-size: 18px; /* Font size */
+  margin-top: 10px;
 }

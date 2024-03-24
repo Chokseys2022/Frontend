@@ -14,7 +14,7 @@ function SearchBlog() {
       <div className="button-container">
         <NavLink to="/read#fitness-section" className="blog-link">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="w-full" src={FitnessImage} alt="dance" />
+            <img className="w-full" src={FitnessImage} alt="fitness" />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Health and Fitness</div>
               <p className="text-gray-700 text-base">
