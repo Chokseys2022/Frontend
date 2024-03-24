@@ -4,7 +4,7 @@ import FoodImage from "../images/Food.png";
 import FamilyImage from "../images/Family.png";
 import ReflectImage from "../images/Reflect.png";
 import FitnessImage from "../images/Fitness.png";
-import "../App.css"; // Import CSS for styling
+import "../App.css"; 
 
 function SearchBlog() {
   return (
@@ -25,6 +25,7 @@ function SearchBlog() {
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">excercise</span>
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fitness</span>
               </div>
+              
             </div>
           </div>
         </NavLink>

@@ -15,9 +15,10 @@ function App() {
   return (
     <Router>
       <div>
-      <h1 className="text-red-500 font-bold underline">//checking if tailwind works
+      <h1 className="text-red-500 font-bold underline">
+      
       Hello world!
-    </h1>
+    </h1>//checking if tailwind works//
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

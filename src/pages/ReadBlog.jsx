@@ -10,8 +10,8 @@ const ReadBlog = () => {
         return (
           <div>
             <h2 className="section-title">Fitness Section</h2>
-            <h3>Exploring Fitness: Journey to a Healthier You</h3>
-            <p>
+            <h3 class="underline decoration-solid">Exploring Fitness: Journey to a Healthier You</h3>
+            <p class="text-justify">
               Dive into the world of fitness with articles covering various
               workout routines, from cardio to strength training. Explore tips
               for staying motivated, advice on proper form, and insights into
@@ -21,8 +21,8 @@ const ReadBlog = () => {
             </p>{" "}
             <br />
             <div className="subsection">
-              <h3>Why Fitness Matters</h3>
-              <p>
+              <h3 class="underline decoration-solid" >Why Fitness Matters</h3>
+              <p class="text-justify">
                 Engaging in fitness isn't just about sculpting your body; it's a
                 journey toward holistic well-being. It's about embracing
                 movement that invigorates your spirit, strengthens your body,
@@ -38,8 +38,8 @@ const ReadBlog = () => {
               <br />
             </div>
             <div className="subsection">
-              <h3>Fitness and Well Being</h3>
-              <p>
+              <h3 class="underline decoration-solid">Fitness and Well Being</h3>
+              <p class="text-justify">
                 Prioritizing fitness in our lives is paramount to achieving
                 overall well-being and vitality. It's not merely about physical
                 appearance but about cultivating resilience, discipline, and a
@@ -61,8 +61,8 @@ const ReadBlog = () => {
           <div>
             <h2 className="section-title">Family Section</h2>
             <div className="subsection">
-              <h3>Importance of Family</h3>
-              <p>
+              <h3 class="underline decoration-solid">Importance of Family</h3>
+              <p class="text-justify">
                 Family is the cornerstone of our lives, providing us with a
                 sense of belonging, support, and unconditional love. It's within
                 the embrace of family that we learn the values of empathy,
@@ -77,8 +77,8 @@ const ReadBlog = () => {
               <br />
             </div>
             <div className="subsection">
-              <h3>Fostering Family Ties</h3>
-              <p>
+              <h3 class="underline decoration-solid">Fostering Family Ties</h3>
+              <p class="text-justify">
                 Family is the bedrock upon which our lives are built, providing
                 us with a sense of belonging, security, and identity. It's
                 within the embrace of family that we learn the values of love,
@@ -95,14 +95,15 @@ const ReadBlog = () => {
               <br />
             </div>
             <p className="section-content">
-              <h3>Celebrating Family: The Heart of Our Lives</h3>
+              <h3 class="underline decoration-solid">Celebrating Family</h3>
+                <p class="text-justify">The Heart of Our Lives
               Family is the cornerstone of our lives, and this hashtag
               celebrates the bonds that tie us together. From heartwarming
               anecdotes to practical advice on navigating the complexities of
               family dynamics, discover stories that resonate with the joys and
               challenges of kinship. Whether it's tales of sibling rivalry,
               parental wisdom, or cherished family traditions, there's a wealth
-              of experiences waiting to be shared under this hashtag.
+              of experiences waiting to be shared under this hashtag.</p>
             </p>
           </div>
         );
@@ -111,8 +112,8 @@ const ReadBlog = () => {
           <div>
             <h2 className="section-title">Reflection Section</h2>
             <div className="subsection">
-              <h3>The Art of Reflection</h3>
-              <p>
+              <h3 class="underline decoration-solid">The Art of Reflection</h3>
+              <p class="text-justify">
                 In the hustle and bustle of daily life, taking time for
                 introspection is a nourishing act of self-care. Reflection
                 allows us to pause, breathe, and delve into the depths of our
@@ -127,8 +128,8 @@ const ReadBlog = () => {
                 transformation.</p><br/>
             </div>
             <div className="subsection">
-              <h3>Finding Meaning in Reflection</h3>
-              <p>
+              <h3 class="underline decoration-solid">Finding Meaning in Reflection</h3>
+              <p class="text-justify">
                 In the midst of life's busyness and noise, the practice of
                 reflection offers a vital pause for self-discovery and personal
                 growth. Taking time to reflect allows us to gain clarity,
@@ -144,8 +145,10 @@ const ReadBlog = () => {
                 life's complexities.
               </p><br/>
             </div>
-            <p className="section-content">
-              <h3>Contemplating Life: Navigating the Depths of Reflection</h3>
+            <p className="section-content"></p>
+            <h3 class="underline decoration-solid">Contemplating Life:</h3>
+              <p class="text-justify">
+                Navigating the Depths of Reflection
               Take a moment to ponder life's big questions and engage in deep
               introspection with the #reflection hashtag. Explore personal
               essays that delve into the human experience, philosophical musings
@@ -161,8 +164,8 @@ const ReadBlog = () => {
           <div>
             <h2 className="section-title">Food Section</h2>
             <div className="subsection">
-              <h3>Cooking as Therapeutic:</h3>
-              <p>
+              <h3 class="underline decoration-solid">Cooking as Therapeutic:</h3>
+              <p class="text-justify">
                 Cooking has a unique ability to soothe the mind and nourish the
                 soul. Engaging in the rhythmic motions of chopping, stirring,
                 and seasoning can be incredibly therapeutic, providing a welcome
@@ -180,8 +183,8 @@ const ReadBlog = () => {
               </p><br/>
             </div>
             <div className="subsection">
-              <h3>Cooking with Kids as Fun:</h3>
-              <p>
+              <h3 class="underline decoration-solid">Cooking with Kids as Fun:</h3>
+              <p class="text-justify">
                 Cooking with kids is not only a delightful bonding experience
                 but also a joyful journey of discovery and learning. From the
                 moment they don tiny aprons and wield miniature spatulas,
@@ -201,7 +204,8 @@ const ReadBlog = () => {
               </p><br/>
             </div>
             <p className="section-content">
-              <h3>Culinary Delights: Exploring the World of Food</h3>
+              <h3 class="underline decoration-solid">Culinary Delights: Exploring the World of Food</h3>
+              <p class="text-justify">
               Food is more than sustenance; it's a language of love, culture,
               and creativity that transcends borders and generations. It's the
               aroma of spices wafting from a bustling kitchen, the sizzle of
@@ -212,7 +216,7 @@ const ReadBlog = () => {
               reflects our heritage, values, and personal tastes. Whether
               indulging in familiar favorites or embarking on culinary
               adventures, food invites us to savor the richness of life and
-              celebrate the bonds that unite us.
+              celebrate the bonds that unite us.</p>
             </p><br/>
           </div>
         );

@@ -1,13 +1,9 @@
-import React from "react";
+import React from 'react'
 
 function Home() {
   return (
-    <div>
-      <h1>HOME</h1>
-    </div>
-  );
+    <div>HOME</div>
+  )
 }
 
-export default Home;
-
-//sign in/sign up form
+export default Home
