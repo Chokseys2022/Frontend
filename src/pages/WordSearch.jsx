@@ -29,6 +29,7 @@ function WordSearch() {
   };
 
   return (
+    <div className="dictionary-container">
     <div className="dictionary">
       <h1>Word Information</h1>
       <form onSubmit={handleSubmit}>
@@ -45,14 +46,14 @@ function WordSearch() {
       {error && <p>{error}</p>}
       {wordData && (
         <div>
-          <h2>{wordData[0].word}</h2>
+          <h2 class="underline decoration-solid">{wordData[0].word}</h2>
           <p>Phonetic: {wordData[0].phonetic}</p>
           <p>Origin: {wordData[0].origin}</p>
           <p>Meanings:</p>
           <ul>
             {wordData[0].meanings.map((meaning, index) => (
               <li key={index}>
-                <p>Part of Speech: {meaning.partOfSpeech}</p>
+                <p class="underline decoration-solid">Part of Speech: {meaning.partOfSpeech}</p>
                 <p>Definition: {meaning.definitions[0].definition}</p>
                 {meaning.definitions[0].example && (
                   <p>Example: {meaning.definitions[0].example}</p>
@@ -63,6 +64,7 @@ function WordSearch() {
          
         </div>
       )}
+    </div>
     </div>
   );}
   
