@@ -44,25 +44,15 @@
 }
 
 /* word search styles */
-
-.dictionary-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
 .dictionary {
   max-width: 500px; /* Maximum width */
   margin: auto; /* Center align */
-  padding: 20px; /* Padding */
+  padding: 30px; /* Padding */
   border: 1px solid #ccc; /* Border */
   border-radius: 5px; /* Border radius */
   margin-left: 20px;
 }
 
-.title {
-  font-size: 24px; /* Title font size */
-  margin-bottom: 20px; /* Margin bottom */
-}
 
 .input {
   width: calc(100% - 85px); /* Input width */
@@ -74,12 +64,10 @@
 
 .dict-button {
   padding: 3px 15px; /* Padding for button */
+  padding-bottom: 15px;
   color: blue; /* Button text color */
   cursor: pointer; /* Cursor style */
-}
 
-.dict-button:hover {
-  color: darkmagenta;
 }
 
 
@@ -92,7 +80,7 @@
 
 .word-info {
   margin-top: 20px; /* Margin top */
-}
+ }
 
 .word-info h2 {
   font-size: 20px; /* Heading font size */

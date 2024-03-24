@@ -29,32 +29,33 @@ function WordSearch() {
   };
 
   return (
-    <div className="dictionary-container">
+    <div className="flex justify-center items-center h-screen">
     <div className="dictionary">
-      <h1>Word Information</h1>
+      <h1  class="underline decoration-solid">Search Word Definition</h1><br/>
       <form onSubmit={handleSubmit}>
         <input 
           type="text" 
           placeholder="Enter a word" 
           value={word} 
           onChange={(e) => setWord(e.target.value)} 
+          className ="pl-1"
         />
-        <button className="dict-button" type="submit">Search</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.4 px-3 rounded">Search</button>
       </form>
   
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {wordData && (
         <div>
-          <h2 class="underline decoration-solid">{wordData[0].word}</h2>
-          <p>Phonetic: {wordData[0].phonetic}</p>
+          <h2 class="underline decoration-solid">{wordData[0].word}</h2> <br/>
+          <p>Phonetic: {wordData[0].phonetic}</p><br/>
           <p>Origin: {wordData[0].origin}</p>
-          <p>Meanings:</p>
+          <p class="underline decoration-solid">Meanings:</p><br/>
           <ul>
             {wordData[0].meanings.map((meaning, index) => (
               <li key={index}>
-                <p class="underline decoration-solid">Part of Speech: {meaning.partOfSpeech}</p>
-                <p>Definition: {meaning.definitions[0].definition}</p>
+                <p>Part of Speech: {meaning.partOfSpeech}</p><br/>
+                <p class="underline decoration-solid">Definition: {meaning.definitions[0].definition}</p> <br/>
                 {meaning.definitions[0].example && (
                   <p>Example: {meaning.definitions[0].example}</p>
                 )}
