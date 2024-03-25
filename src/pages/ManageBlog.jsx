@@ -4,6 +4,7 @@ import axios from 'axios';
 
 const ManageBlog = () => {
   const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -11,10 +12,12 @@ const ManageBlog = () => {
       try {
         const response = await axios.get('http://localhost:3000/blogData');
         setBlogs(response.data);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching blog data:', error);
         console.log(error);
         setError('Error fetching blog data! Please try again later.');
+        setLoading(false);
       }
     };
 
@@ -23,8 +26,9 @@ const ManageBlog = () => {
 
   return (
     <div>
-      <h1>Blog Posts</h1>
-      {error ? (
+      {loading ? ( // Check loading state
+        <p>Loading...</p>
+      ) : error ? (
         <p>{error}</p>
       ) : (
         <ul>
