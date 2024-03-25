@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Welcome from '../components/Welcome';
 import '../App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div className="container">
+    <Welcome />
       <div className="formContainer">
         <h2>Sign In</h2>
         {error && <div className="errorMessage">{error}</div>}
