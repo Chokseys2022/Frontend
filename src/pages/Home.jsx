@@ -1,72 +1,71 @@
-import React, { useState } from 'react'; // Added React import
-import '../App.css'; // Corrected import syntax
-import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+import React, { useState } from 'react';
+import '../App.css';
 
 function App() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/register', { name, email, password })
-      .then(result => console.log(result))
-      .catch(err => console.log(err));
+    // Simple validation
+    if (!name || !email || !password) {
+      setError('Please fill in all fields');
+      return;
+    }
+    // Your form submission logic here (e.g., API call)
+    console.log("Form submitted:", { name, email, password });
+    // Reset form fields after successful registration
+    setName('');
+    setEmail('');
+    setPassword('');
+    setError('');
   }
 
   return (
-    <div className="d-flex justify-content-center align-items-center bg-primary vh-100">
-      <div className="bg-white p-3 rounded w-25">
-        <h2>Register</h2>
+    <div className="container">
+      <div className="formContainer">
+        <h2>Sign In</h2>
+        {error && <div className="errorMessage">{error}</div>}
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="name">
-              <strong>Name</strong>
-            </label>
+          <div className="formGroup">
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               placeholder="Enter Name"
               autoComplete="off"
-              name="name" // Corrected name attribute
-              className="form-control rounded-0"
+              name="name"
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="mb-3">
-            <label htmlFor="email">
-              <strong>Email</strong>
-            </label>
+          <div className="formGroup">
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               placeholder="Enter Email"
               autoComplete="off"
               name="email"
-              className="form-control rounded-0"
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="mb-3">
-            <label htmlFor="password">
-              <strong>Password</strong>
-            </label>
+          <div className="formGroup">
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               placeholder="Enter Password"
               autoComplete="off"
               name="password"
-              className="form-control rounded-0"
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button type="submit" className="btn btn-success w-100 rounded-0">
-            Register
-          </button>
-          <p>Already Have an Account</p>
-          <button className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
-            Login
-          </button>
+          <button  className="sign-button">Sign In</button>
         </form>
+        <p>Already have an account?</p>
+        <button  className="login-button">Login</button>
       </div>
     </div>
   );

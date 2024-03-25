@@ -216,3 +216,58 @@ body {
   font-size: 18px; /* Font size */
   margin-top: 10px;
 }
+/*FORM*/
+.container {
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.formContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+}
+
+.h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.sign-button,
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover,
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 10px;
+}
+
