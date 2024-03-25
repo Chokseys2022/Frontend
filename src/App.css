@@ -130,7 +130,7 @@ body {
 }
 
 
-/* Button Image SearchBlog page styles */
+/* Button Image SelectBlog page styles */
 .image {
   width: 150px; /* Image width */
   height: 100px; /* Image height */
@@ -165,6 +165,13 @@ body {
   margin-bottom: 20px; /* Margin bottom */
 }
 
+.image-container{
+  height: 475px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 /* READBLOG styles */
 
 .read-blog-container {

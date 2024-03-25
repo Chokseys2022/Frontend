@@ -10,7 +10,7 @@ import "./App.css";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
-import SearchBlog from "./pages/SelectBlog.jsx";
+import SelectBlog from "./pages/SelectBlog.jsx";
 import ReadBlog from "./pages/ReadBlog.jsx";
 import ManageBlog from "./pages/ManageBlog.jsx";
 import WordSearch from "./pages/WordSearch.jsx";
@@ -23,7 +23,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/search" element={<SearchBlog />} />
+          <Route path="/search" element={<SelectBlog />} />
           <Route path="/read" element={<ReadBlog />} />
           <Route path="/manage" element={<ManageBlog />} />
           <Route path="/wordsearch" element={<WordSearch />} />
