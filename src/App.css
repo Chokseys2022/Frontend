@@ -1,7 +1,7 @@
 /* Body styles */
 body {
-  font-family: Arial, sans-serif; /* Font family */
-  background-color: #f4f4f4; /* Background color */
+  font-family: Arial, sans-serif; 
+  background-color: #f4f4f4; 
 }
 
 /* Container */
@@ -79,17 +79,18 @@ body {
 }
 
 /* word search styles */
-.dictionary {
+.dictionary-container {
+  background-color: #f0f0f0;
   max-width: 500px; 
   margin: 50px auto;
   padding: 30px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
   
-}
+  border-radius: 5px; 
+  }
 
 
 .input {
+  
   width: calc(100% - 85px); /* Input width */
   padding: 10px; /* Padding */
   margin-right: 10px; /* Margin right */
@@ -248,6 +249,7 @@ body {
 
 /*FORM*/
 .container {
+  background-color: #f4f4f4;
   display:flex ;
   justify-content: center;
   align-items: center;
@@ -255,7 +257,7 @@ body {
   }
 
 .formContainer {
-  background-color: #ffffff;
+  background-color:#f4f4f4;
   padding: 20px;
   border-radius: 8px;
   width: 350px;

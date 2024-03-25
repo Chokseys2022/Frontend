@@ -37,7 +37,7 @@ function WordSearch() {
   };
 
   return (
-    <div className="dictionary">
+    <div className="dictionary-container">
       <h1 class="underline decoration-solid">Look up  Word Definition</h1>
       <br />
       <form onSubmit={handleSubmit}>
