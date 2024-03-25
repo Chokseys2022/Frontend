@@ -80,12 +80,12 @@ body {
 
 /* word search styles */
 .dictionary {
-  max-width: 500px; /* Maximum width */
-  margin: auto; /* Center align */
-  padding: 30px; /* Padding */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 5px; /* Border radius */
-  margin-left: 20px;
+  max-width: 500px; 
+  margin: 50px auto;
+  padding: 30px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  
 }
 
 
@@ -221,8 +221,12 @@ body {
 .welcomeContainer {
   background-color: #f0f0f0;
   padding: 20px;
+  padding-right: 50px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  margin-top: 20px;
+    width: 950px;
 }
 
 .welcomeContainer h1 {
@@ -241,15 +245,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
+  }
 
 .formContainer {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
+  width: 350px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin-left: auto;
+  margin-left: 100px;
+  margin-bottom: 80px;
 }
 
 
