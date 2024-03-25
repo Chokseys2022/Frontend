@@ -14,8 +14,8 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/search" label="Search Blog">
-              Search Blogs
+            <Link to="/search" label="Select Blog">
+              Select Blogs
             </Link>
           </li>
           <li>
