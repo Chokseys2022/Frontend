@@ -1,30 +1,34 @@
-import React, { useState } from 'react';
-import Welcome from '../components/Welcome';
-import '../App.css';
-import backgroundImage from '../images/1.png'; // Import your background image
+//all imports
+import React, { useState } from "react";
+import Welcome from "../components/Welcome";
+import "../App.css";
+import backgroundImage from "../images/1.png"; // Import your background image
 
+//state variables to manage input vals and err msgs in form
 function Home() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
+  //funct to mangage form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simple validation
+    // validation of all fields
     if (!name || !email || !password) {
-      setError('Please fill in all fields');
+      setError("Please fill in all fields");
       return;
     }
-    // Your form submission logic here (e.g., API call)
+    //form sub details
     console.log("Form submitted:", { name, email, password });
-    // Reset form fields after successful registration
-    setName('');
-    setEmail('');
-    setPassword('');
-    setError('');
-  }
+    //reset the form after successful registration
+    setName("");
+    setEmail("");
+    setPassword("");
+    setError("");
+  };
 
+  //form elements
   return (
     <div className="container">
       <Welcome />
