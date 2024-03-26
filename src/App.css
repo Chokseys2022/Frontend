@@ -61,13 +61,13 @@ body {
 }
 
 .navbar ul li a {
-  color: rgb(75, 73, 123); /* Link text color */
+  color: rgb(75, 73, 123);
   text-decoration: none;
   font-size: 18px;
 }
 
 .navbar ul li a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 /* Footer Styles */
@@ -106,7 +106,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-/*  */
+
 
 .dict-button {
   background-color: rgb(195, 195, 215);
