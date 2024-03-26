@@ -54,3 +54,6 @@ My first ever MERN stack project. This a personal blog application built with Re
 - https://dictionaryapi.dev/ for WordSearch page
 - HomePage image - Sonal Choksey
 
+### What I would change:
+- Implement CRUD Capabilities
+- Sign-In with Validation
