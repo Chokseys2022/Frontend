@@ -13,7 +13,7 @@ function SelectBlog() {
 
       <div className="button-container">
         
-        <NavLink to={{ pathname: "/read", search: "?section=fitness" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/fitness", search: "?section=fitness" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FitnessImage} alt="fitness" />
@@ -27,7 +27,7 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to={{ pathname: "/read", search: "?section=fam-section" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/family", search: "?section=fam-section" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FamilyImage} alt="family" />
@@ -41,7 +41,7 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to={{ pathname: "/read", search: "?section=thought-section" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/reflection", search: "?section=thought-section" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={ReflectImage} alt="reflection" />
@@ -56,7 +56,7 @@ function SelectBlog() {
         </NavLink>
 
        
-        <NavLink to={{ pathname: "/read", search: "?section=food-section" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/food", search: "?section=food-section" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FoodImage} alt="food" />

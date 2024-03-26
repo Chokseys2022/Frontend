@@ -25,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<SelectBlog />} />
           <Route path="/read" element={<ReadBlog />} />
+          <Route path="/read/:article" element={<ReadBlog />} />
           <Route path="/manage" element={<ManageBlog />} />
           <Route path="/wordsearch" element={<WordSearch />} />
         </Routes>

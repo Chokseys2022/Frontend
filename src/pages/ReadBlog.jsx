@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
-import SelectBlog from "./SelectBlog"; 
-
-
+import SelectBlog from "./SelectBlog";
+import { useParams } from "react-router-dom";
 
 const ReadBlog = () => {
   const [selectedSection, setSelectedSection] = useState("");
+  let { article } = useParams();
+
+  useEffect(() => {
+    setSelectedSection(article);
+  }, []);
 
   const renderContent = () => {
     switch (selectedSection) {
@@ -13,7 +17,9 @@ const ReadBlog = () => {
         return (
           <div className="section-container">
             <h2 className="section-title">Fitness Section</h2>
-            <h3 class="underline decoration-solid">Exploring Fitness: Journey to a Healthier You</h3>
+            <h3 class="underline decoration-solid">
+              Exploring Fitness: Journey to a Healthier You
+            </h3>
             <p class="text-justify">
               Dive into the world of fitness with articles covering various
               workout routines, from cardio to strength training. Explore tips
@@ -24,7 +30,7 @@ const ReadBlog = () => {
             </p>{" "}
             <br />
             <div className="subsection">
-              <h3 class="underline decoration-solid" >Why Fitness Matters</h3>
+              <h3 class="underline decoration-solid">Why Fitness Matters</h3>
               <p class="text-justify">
                 Engaging in fitness isn't just about sculpting your body; it's a
                 journey toward holistic well-being. It's about embracing
@@ -99,14 +105,16 @@ const ReadBlog = () => {
             </div>
             <p className="section-content">
               <h3 class="underline decoration-solid">Celebrating Family</h3>
-                <p class="text-justify">The Heart of Our Lives
-              Family is the cornerstone of our lives, and this hashtag
-              celebrates the bonds that tie us together. From heartwarming
-              anecdotes to practical advice on navigating the complexities of
-              family dynamics, discover stories that resonate with the joys and
-              challenges of kinship. Whether it's tales of sibling rivalry,
-              parental wisdom, or cherished family traditions, there's a wealth
-              of experiences waiting to be shared under this hashtag.</p>
+              <p class="text-justify">
+                The Heart of Our Lives Family is the cornerstone of our lives,
+                and this hashtag celebrates the bonds that tie us together. From
+                heartwarming anecdotes to practical advice on navigating the
+                complexities of family dynamics, discover stories that resonate
+                with the joys and challenges of kinship. Whether it's tales of
+                sibling rivalry, parental wisdom, or cherished family
+                traditions, there's a wealth of experiences waiting to be shared
+                under this hashtag.
+              </p>
             </p>
           </div>
         );
@@ -128,10 +136,14 @@ const ReadBlog = () => {
                 and compassion. Whether journaling our thoughts, meditating in
                 quiet contemplation, or engaging in meaningful conversations,
                 reflection is a sacred space for self-discovery and personal
-                transformation.</p><br/>
+                transformation.
+              </p>
+              <br />
             </div>
             <div className="subsection">
-              <h3 class="underline decoration-solid">Finding Meaning in Reflection</h3>
+              <h3 class="underline decoration-solid">
+                Finding Meaning in Reflection
+              </h3>
               <p class="text-justify">
                 In the midst of life's busyness and noise, the practice of
                 reflection offers a vital pause for self-discovery and personal
@@ -146,20 +158,22 @@ const ReadBlog = () => {
                 presence, the importance of reflection cannot be understated;
                 it's where we find meaning, authenticity, and inner peace amidst
                 life's complexities.
-              </p><br/>
+              </p>
+              <br />
             </div>
             <p className="section-content"></p>
             <h3 class="underline decoration-solid">Contemplating Life:</h3>
-              <p class="text-justify">
-                Navigating the Depths of Reflection
-              Take a moment to ponder life's big questions and engage in deep
-              introspection with the #reflection hashtag. Explore personal
-              essays that delve into the human experience, philosophical musings
-              on the nature of existence, and poignant reflections on moments of
-              triumph and adversity. From profound insights to moments of
-              vulnerability, this hashtag invites you to contemplate the
-              richness and complexity of the human condition.
-            </p><br/>
+            <p class="text-justify">
+              Navigating the Depths of Reflection Take a moment to ponder life's
+              big questions and engage in deep introspection with the
+              #reflection hashtag. Explore personal essays that delve into the
+              human experience, philosophical musings on the nature of
+              existence, and poignant reflections on moments of triumph and
+              adversity. From profound insights to moments of vulnerability,
+              this hashtag invites you to contemplate the richness and
+              complexity of the human condition.
+            </p>
+            <br />
           </div>
         );
       case "food":
@@ -167,7 +181,9 @@ const ReadBlog = () => {
           <div className="section-container">
             <h2 className="section-title">Food Section</h2>
             <div className="subsection">
-              <h3 class="underline decoration-solid">Cooking as Therapeutic:</h3>
+              <h3 class="underline decoration-solid">
+                Cooking as Therapeutic:
+              </h3>
               <p class="text-justify">
                 Cooking has a unique ability to soothe the mind and nourish the
                 soul. Engaging in the rhythmic motions of chopping, stirring,
@@ -183,10 +199,13 @@ const ReadBlog = () => {
                 oneself and others. Whether it's kneading dough, simmering a
                 hearty stew, or baking a batch of cookies, cooking offers a form
                 of self-care that nourishes both body and spirit.
-              </p><br/>
+              </p>
+              <br />
             </div>
             <div className="subsection">
-              <h3 class="underline decoration-solid">Cooking with Kids as Fun:</h3>
+              <h3 class="underline decoration-solid">
+                Cooking with Kids as Fun:
+              </h3>
               <p class="text-justify">
                 Cooking with kids is not only a delightful bonding experience
                 but also a joyful journey of discovery and learning. From the
@@ -204,23 +223,28 @@ const ReadBlog = () => {
                 not only develop a love for good food but also cultivate a
                 deeper appreciation for the joys of teamwork, imagination, and
                 shared experiences.
-              </p><br/>
+              </p>
+              <br />
             </div>
             <p className="section-content">
-              <h3 class="underline decoration-solid">Culinary Delights: Exploring the World of Food</h3>
+              <h3 class="underline decoration-solid">
+                Culinary Delights: Exploring the World of Food
+              </h3>
               <p class="text-justify">
-              Food is more than sustenance; it's a language of love, culture,
-              and creativity that transcends borders and generations. It's the
-              aroma of spices wafting from a bustling kitchen, the sizzle of
-              ingredients dancing in a pan, and the symphony of flavors that
-              ignite our senses. From the comfort of a home-cooked meal to the
-              excitement of exploring exotic cuisines, food nourishes not only
-              our bodies but also our souls. It's a form of expression that
-              reflects our heritage, values, and personal tastes. Whether
-              indulging in familiar favorites or embarking on culinary
-              adventures, food invites us to savor the richness of life and
-              celebrate the bonds that unite us.</p>
-            </p><br/>
+                Food is more than sustenance; it's a language of love, culture,
+                and creativity that transcends borders and generations. It's the
+                aroma of spices wafting from a bustling kitchen, the sizzle of
+                ingredients dancing in a pan, and the symphony of flavors that
+                ignite our senses. From the comfort of a home-cooked meal to the
+                excitement of exploring exotic cuisines, food nourishes not only
+                our bodies but also our souls. It's a form of expression that
+                reflects our heritage, values, and personal tastes. Whether
+                indulging in familiar favorites or embarking on culinary
+                adventures, food invites us to savor the richness of life and
+                celebrate the bonds that unite us.
+              </p>
+            </p>
+            <br />
           </div>
         );
       default:
