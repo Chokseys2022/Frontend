@@ -8,7 +8,7 @@ const ReadBlog = () => {
     switch (selectedSection) {
       case "fitness":
         return (
-          <div>
+          <div className="section-container">
             <h2 className="section-title">Fitness Section</h2>
             <h3 class="underline decoration-solid">Exploring Fitness: Journey to a Healthier You</h3>
             <p class="text-justify">
@@ -58,7 +58,7 @@ const ReadBlog = () => {
         );
       case "family":
         return (
-          <div>
+          <div className="section-container">
             <h2 className="section-title">Family Section</h2>
             <div className="subsection">
               <h3 class="underline decoration-solid">Importance of Family</h3>
@@ -109,7 +109,7 @@ const ReadBlog = () => {
         );
       case "reflection":
         return (
-          <div>
+          <div className="section-container">
             <h2 className="section-title">Reflection Section</h2>
             <div className="subsection">
               <h3 class="underline decoration-solid">The Art of Reflection</h3>
@@ -161,7 +161,7 @@ const ReadBlog = () => {
         );
       case "food":
         return (
-          <div>
+          <div className="section-container">
             <h2 className="section-title">Food Section</h2>
             <div className="subsection">
               <h3 class="underline decoration-solid">Cooking as Therapeutic:</h3>

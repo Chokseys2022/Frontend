@@ -32,6 +32,13 @@ body {
   color: darkslategrey; /* Title color */
   margin-bottom: 10px; /* Margin bottom */
 }
+.section-container {
+  background-color: #f0f0f0; /* Set your desired background color */
+  padding: 20px; /* Add padding as needed */
+  margin-bottom: 20px; /* Add margin between sections */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
 
 
 /* Navbar styles */

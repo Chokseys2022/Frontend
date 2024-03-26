@@ -10,7 +10,8 @@ const ManageBlog = () => {
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/blogData');
+        const response = await axios.get('http://localhost:3000/blogData')
+        ;
         setBlogs(response.data);
         setLoading(false);
       } catch (error) {
@@ -35,7 +36,7 @@ const ManageBlog = () => {
           {blogs.map(blog => (
             <li key={blog._id}>
               <h2>{blog.title}</h2>
-              <p>{blog.content}</p>
+              <p>{blog.topic}</p>
             </li>
           ))}
         </ul>
