@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Welcome from '../components/Welcome';
 import '../App.css';
-import backgroundImage from '../images/sea.png'; // Import your background image
+import backgroundImage from '../images/1.png'; // Import your background image
 
 function Home() {
   const [name, setName] = useState('');

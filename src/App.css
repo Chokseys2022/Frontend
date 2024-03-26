@@ -1,6 +1,6 @@
 /* Body styles */
 body {
-  background-image: url('./images/sea.png');
+  background-image: url('./images/1.png');
   background-size: cover;
   
 }
@@ -43,7 +43,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color:; /* Background color */
+  background-color:rgba(0, 0, 0, 0); /* Background color */
   height: 80px; /* Height of the navbar */
   display: flex; /* Display flex for alignment */
   justify-content: space-between; /* Space between items */
@@ -73,7 +73,7 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: ; /* Background color */
+  background-color:rgba(0, 0, 0, 0); /* Background color */
   color: black; /* Text color */
   font-size: 18px;
   padding: 3px; /* Padding */

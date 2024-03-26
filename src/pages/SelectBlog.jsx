@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import FoodImage from "../images/Food.png";
-import FamilyImage from "../images/Family.png";
-import ReflectImage from "../images/Reflect.png";
-import FitnessImage from "../images/Fitness.png";
+import FoodImage from "../images/food1.png";
+import FamilyImage from "../images/fam.png";
+import ReflectImage from "../images/ref.png";
+import FitnessImage from "../images/fit.png";
 import "../App.css"; 
 
 function SelectBlog() {
@@ -12,7 +12,9 @@ function SelectBlog() {
       <h1> </h1>
 
       <div className="button-container">
-        <NavLink to="/read#fitness-section" className="blog-link">
+        
+        <NavLink to={{ pathname: "/read", search: "?section=fitness" }} className="blog-link">
+
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FitnessImage} alt="fitness" />
             <div className="px-6 py-4">
@@ -25,7 +27,8 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to="/read#fam-section" className="blog-link">
+        <NavLink to={{ pathname: "/read", search: "?section=fam-section" }} className="blog-link">
+
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FamilyImage} alt="family" />
             <div className="px-6 py-4">
@@ -38,7 +41,8 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to="/read#thought-section" className="blog-link">
+        <NavLink to={{ pathname: "/read", search: "?section=thought-section" }} className="blog-link">
+
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={ReflectImage} alt="reflection" />
             <div className="px-6 py-4">
@@ -51,7 +55,9 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to="/read#food-section" className="blog-link">
+       
+        <NavLink to={{ pathname: "/read", search: "?section=food-section" }} className="blog-link">
+
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FoodImage} alt="food" />
             <div className="px-6 py-4">
