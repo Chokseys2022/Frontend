@@ -17,12 +17,14 @@ This project is a Blog Management System built with React and React Router for c
 - **Axios:** A promise-based HTTP client for making API requests.
 - **CSS:** Styling is done using CSS for layout and design.
 - **Node.js:** A JavaScript runtime environment for running JavaScript code outside of a web browser.
+- **MongoDB:** A NoSQL database used for storing and managing application data.
 - **Tailwind CSS:** A utility-first CSS framework for building responsive and customizable user interfaces.
 
 ## File Structure
 
 - **public/:** Contains the index.html file and other static assets.
-- **src/components/:** Contains React components used across the application. -**Components**
+- **src/components/:** Contains React components used across the application. 
+- **Components**
 - Header.jsx
 - Footer.jsx
 - **src/pages/:** Contains page components representing different views/routes of the application.
@@ -46,8 +48,9 @@ This project is a Blog Management System built with React and React Router for c
 - Administrators can access the management panel to manage blog content.
 - Users can search for word definitions using the integrated dictionary.
 
-## Contributing
+## Credits
+- Canva for SelectBlog page images
+- [Tailwindfor CSS ](https://tailwindcss.com/)for SeleactBlog page layout
+- https://dictionaryapi.dev/ for WordSearch page
+- HomePage image - Sonal Choksey
 
-Contributions are welcome! Please follow the standard GitHub flow:
-
-##
