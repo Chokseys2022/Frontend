@@ -43,6 +43,8 @@ const ManageBlog = () => {
             <li key={blog._id}>
               <h2>{blog.title}</h2>
               <p>{blog.topic}</p>
+              <p>{blog.content}</p>
+              <p>{blog.entryDate}</p>
             </li>
           ))}
         </ul>
