@@ -1,3 +1,4 @@
+//ManageBlog.jsx
 //imports
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -41,7 +42,9 @@ const ManageBlog = () => {
         <ul>
           {blogs.map((blog) => (
             <li key={blog._id}>
-              <h2 style={{ fontWeight: 'bold', textDecoration: 'underline' }}>{blog.title}</h2>
+              <h2 style={{ fontWeight: "bold", textDecoration: "underline" }}>
+                {blog.title}
+              </h2>
               <p>{blog.topic}</p>
               <p>{blog.content}</p>
               <p>{blog.entryDate}</p>
@@ -54,3 +57,4 @@ const ManageBlog = () => {
 };
 
 export default ManageBlog;
+//-----------------------------------------END CODE-----------------------------------------//

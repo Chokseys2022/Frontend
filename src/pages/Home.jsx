@@ -1,3 +1,4 @@
+//home.jsx
 //all imports
 import React, { useState } from "react";
 import Welcome from "../components/Welcome";
@@ -79,3 +80,5 @@ function Home() {
 }
 
 export default Home;
+
+//-----------------------------------------END CODE-----------------------------------------//

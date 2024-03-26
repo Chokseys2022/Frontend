@@ -1,3 +1,4 @@
+//wordsearch.jsx
 //imports
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -96,3 +97,4 @@ function WordSearch() {
 }
 
 export default WordSearch;
+//-----------------------------------------END CODE-----------------------------------------//
