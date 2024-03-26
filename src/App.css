@@ -62,8 +62,8 @@ body {
 
 .navbar ul li a {
   color: rgb(75, 73, 123); /* Link text color */
-  text-decoration: none; 
-  font-size: 18px; 
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .navbar ul li a:hover {
@@ -72,14 +72,14 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: rgba(0, 0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0);
   color: rgb(75, 73, 123);
   font-size: 18px;
-  padding: 3px; 
+  padding: 3px;
   padding-left: 20px;
-  position: fixed; 
+  position: fixed;
   bottom: 0; /* Align to the bottom */
-  width: 100%; 
+  width: 100%;
 }
 
 /* word search styles */
@@ -106,32 +106,41 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+/*  */
 
 .dict-button {
-  padding: 3px 15px;
-  padding-bottom: 15px;
-  color: rgb(85, 85, 146);
+  background-color: rgb(195, 195, 215);
+  color: rgb(75, 75, 101);
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
   cursor: pointer;
 }
 
+.dict-button:hover {
+  background-color:rgb(136, 136, 175);
+}
+
+
 .loading,
 .error {
-  margin-top: 20px; 
-  font-style: italic; 
-  color: #ff0000; 
+  margin-top: 20px;
+  font-style: italic;
+  color: #ff0000;
 }
 
 .word-info {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .word-info h2 {
-  font-size: 20px; 
-  margin-bottom: 10px; 
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .word-info p {
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .word-info ul {
@@ -145,7 +154,6 @@ body {
   margin-top: 100px;
 }
 
-
 .button-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -153,7 +161,6 @@ body {
   justify-items: center;
   color: gray;
 }
-
 
 .button {
   text-align: center;
@@ -170,7 +177,6 @@ body {
 .search-blog-heading {
   margin-bottom: 20px;
 }
-
 
 .image-container {
   height: 475px;
@@ -199,7 +205,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 .section-buttons button {
   padding: 10px 20px;
   margin: 0 10px;
@@ -211,7 +216,6 @@ body {
   font-size: 18px;
 }
 
-
 .section-buttons button:hover {
   color: rgb(141, 73, 141);
 }
@@ -221,16 +225,16 @@ body {
 }
 
 .section-content {
-  text-align: left; 
+  text-align: left;
 }
 
 .section-title {
-  font-size: 24px; 
-  margin-bottom: 10px; 
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .section-content p {
-  font-size: 18px; 
+  font-size: 18px;
   margin-top: 10px;
 }
 

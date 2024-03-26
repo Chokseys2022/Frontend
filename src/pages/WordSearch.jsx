@@ -1,6 +1,5 @@
-//wordsearch.jsx
 //imports
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 //State variables for word input, word data, loading state, and error handling
@@ -27,23 +26,25 @@ function WordSearch() {
     }
   };
 
-  //funct to manage form submisson
+  //funct to manage form submission
   const handleSubmit = async (event) => {
     event.preventDefault(); //prevent form default behaviour or reloading entire page
     if (word !== "") {
       fetchData();
     }
   };
-  //fuct to reset state
+  
+  //funct to reset state
   const handleRefresh = () => {
     setWord("");
     setWordData(null);
     setError(null);
   };
+
   //form specifics
   return (
     <div className="dictionary">
-      <h1 class="underline decoration-solid">Look up Word Definition</h1>
+      <h1>Look up Word Definition</h1>
       <br />
       <form onSubmit={handleSubmit}>
         <input
@@ -51,38 +52,27 @@ function WordSearch() {
           placeholder="Enter a word"
           value={word}
           onChange={(e) => setWord(e.target.value)}
-          className="pl-2"
         />
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.4 px-3 rounded ml-2">
-          Search
-        </button>
-        <button
-          type="button"
-          onClick={handleRefresh}
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0.4 px-3 rounded ml-2"
-        >
-          Refresh
-        </button>
+        <button className="dict-button" onClick={handleSubmit}>Search</button>
+        <button className="dict-button" type="button" onClick={handleRefresh}>Refresh</button>
       </form>
 
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
       {wordData && (
         <div>
-          <h2 class="underline decoration-solid">{wordData[0].word}</h2> <br />
+          <h2>{wordData[0].word}</h2> <br />
           <p>Phonetic: {wordData[0].phonetic}</p>
           <br />
           <p>Origin: {wordData[0].origin}</p>
-          <p class="underline decoration-solid">Meanings:</p>
+          <p>Meanings:</p>
           <br />
           <ul>
             {wordData[0].meanings.map((meaning, index) => (
               <li key={index}>
                 <p>Part of Speech: {meaning.partOfSpeech}</p>
                 <br />
-                <p class="underline decoration-solid">
-                  Definition: {meaning.definitions[0].definition}
-                </p>{" "}
+                <p>Definition: {meaning.definitions[0].definition}</p>{" "}
                 <br />
                 {meaning.definitions[0].example && (
                   <p>Example: {meaning.definitions[0].example}</p>
@@ -97,4 +87,3 @@ function WordSearch() {
 }
 
 export default WordSearch;
-//-----------------------------------------END CODE-----------------------------------------//
