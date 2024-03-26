@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Welcome from "../components/Welcome";
 import "../App.css";
+import axios from "axios";
 import backgroundImage from "../images/1.png"; // Import your background image
 
 //state variables to manage input vals and err msgs in form
@@ -21,12 +22,20 @@ function Home() {
       return;
     }
     //form sub details
-    console.log("Form submitted:", { name, email, password });
-    //reset the form after successful registration
-    setName("");
-    setEmail("");
-    setPassword("");
-    setError("");
+    // Send form data to backend
+    axios
+      .post("http://localhost:3000/api/user", { name, email, password })
+      .then((response) => {
+        console.log("Response from backend:", response.data);
+        setName("");
+        setEmail("");
+        setPassword("");
+        setError("");
+      })
+      .catch((error) => {
+        console.error("Error submitting form:", error);
+        // Handle error
+      });
   };
 
   //form elements

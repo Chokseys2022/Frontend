@@ -45,9 +45,13 @@ const ManageBlog = () => {
               <h2 style={{ fontWeight: "bold", textDecoration: "underline" }}>
                 {blog.title}
               </h2>
-              <p>{blog.topic}</p>
+              <br />
               <p>{blog.content}</p>
-              <p>{blog.entryDate}</p>
+              <br />
+              <p> Author name: {blog.author}</p>
+              <br />
+              <p>Date: {blog.entryDate}</p>
+              <br />
             </li>
           ))}
         </ul>
