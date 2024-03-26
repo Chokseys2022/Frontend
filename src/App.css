@@ -6,63 +6,63 @@ body {
 
 /* Container */
 .read-blog-container {
-  max-width: 100px; /* Maximum width */
-  margin: 0 auto; /* Center align */
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 /* Header */
 .header {
-  text-align: center; /* Text alignment */
-  padding: 20px 0; /* Padding */
+  text-align: center;
+  padding: 20px 0;
 }
 
 .blog-title {
-  font-size: 2rem; /* Title font size */
-  color: #333; /* Title color */
+  font-size: 2rem;
+  color: #333;
 }
 
 /* Main Content */
 .main-content {
-  padding: 20px; /* Padding */
+  padding: 20px;
 }
 
 .section-title {
-  font-size: 1.5rem; /* Title font size */
-  color: darkslategrey; /* Title color */
-  margin-bottom: 10px; /* Margin bottom */
+  font-size: 1.5rem;
+  color: darkslategrey;
+  margin-bottom: 10px;
 }
 .section-container {
-  background-color: rgba(249, 249, 249, 0.4); /* Set your desired background color */
-  padding: 20px; /* Add padding as needed */
-  margin-bottom: 20px; /* Add margin between sections */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  background-color: rgba(249, 249, 249, 0.4);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Navbar styles */
 .navbar {
-  background-color: rgba(0, 0, 0, 0); /* Background color */
-  height: 80px; /* Height of the navbar */
-  display: flex; /* Display flex for alignment */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Center align items vertically */
-  padding: 0 20px; /* Padding for inner content */
+  background-color: rgba(0, 0, 0, 0);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .navbar ul {
   margin: 0;
   padding: 0;
-  display: flex; /* Display list items horizontally */
+  display: flex;
 }
 
 .navbar ul li {
-  margin-right: 20px; /* Margin between list items */
+  margin-right: 20px;
 }
 
 .navbar ul li a {
   color: rgb(75, 73, 123); /* Link text color */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 18px; /* Font size for links */
+  text-decoration: none; 
+  font-size: 18px; 
 }
 
 .navbar ul li a:hover {
@@ -71,14 +71,14 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: rgba(0, 0, 0, 0); /* Background color */
+  background-color: rgba(0, 0, 0, 0); 
   color: rgb(75, 73, 123);
   font-size: 18px;
-  padding: 3px; /* Padding */
+  padding: 3px; 
   padding-left: 20px;
-  position: fixed; /* Fixed position at the bottom */
+  position: fixed; 
   bottom: 0; /* Align to the bottom */
-  width: 100%; /* Full width */
+  width: 100%; 
 }
 
 /* word search styles */
@@ -99,82 +99,77 @@ body {
   height: 100vh;
 }
 .input {
-  width: calc(100% - 85px); /* Input width */
-  padding: 10px; /* Padding */
-  margin-right: 10px; /* Margin right */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 5px; /* Border radius */
+  width: calc(100% - 85px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .dict-button {
-  padding: 3px 15px; /* Padding for button */
+  padding: 3px 15px;
   padding-bottom: 15px;
-  color: rgb(85, 85, 146); /* Button text color */
-  cursor: pointer; /* Cursor style */
+  color: rgb(85, 85, 146);
+  cursor: pointer;
 }
 
 .loading,
 .error {
-  margin-top: 20px; /* Margin top */
-  font-style: italic; /* Italic font style */
-  color: #ff0000; /* Text color */
+  margin-top: 20px; 
+  font-style: italic; 
+  color: #ff0000; 
 }
 
 .word-info {
-  margin-top: 20px; /* Margin top */
+  margin-top: 20px; 
 }
 
 .word-info h2 {
-  font-size: 20px; /* Heading font size */
-  margin-bottom: 10px; /* Margin bottom */
+  font-size: 20px; 
+  margin-bottom: 10px; 
 }
 
 .word-info p {
-  margin-bottom: 5px; /* Margin bottom */
+  margin-bottom: 5px; 
 }
 
 .word-info ul {
-  padding-left: 20px; /* Left padding for list */
+  padding-left: 20px;
 }
 
-/* Button Image SelectBlog page styles */
 .image {
-  width: 150px; /* Image width */
-  height: 100px; /* Image height */
-  margin: 10px; /* Margin around images */
-  margin-top: 100px; /* Margin from the top */
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  margin-top: 100px;
 }
+
 
 .button-container {
-  display: grid; /* Display grid */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  ); /* Responsive grid */
-  gap: 20px; /* Gap between grid items */
-  justify-items: center; /* Center items horizontally */
-  color: gray
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  color: gray;
 }
+
 
 .button {
-  text-align: center; /* Text alignment */
-  align-items: center; /* Align items */
-  height: 100%; /* Full height */
-  display: flex; /* Display flex */
-  flex-direction: column; /* Flex direction */
-  
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-/*Searchblog css */
 .search-blog-container {
-  text-align: center; 
-  /* Text alignment under image on search page */
+  text-align: center;
 }
 
 .search-blog-heading {
-  margin-bottom: 20px; /* Margin bottom */
+  margin-bottom: 20px;
 }
+
 
 .image-container {
   height: 475px;
@@ -182,62 +177,59 @@ body {
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  
 }
 /* READBLOG styles */
 
 .read-blog-container {
-  max-width: 1000px; /* Maximum width */
-  margin: 0 auto; /* Center align */
-  padding: 20px; /* Padding */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
   border: 7px solid rgba(204, 204, 204, 0.3);
 }
 
 .blog-title {
-  text-align: center; /* Text alignment */
-  margin-bottom: 20px; /* Margin bottom */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .section-buttons {
-  display: flex; /* Display flex */
-  justify-content: center; /* Center horizontally */
-  margin-bottom: 20px; /* Margin bottom */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
+
 .section-buttons button {
-  padding: 10px 20px; /* Padding */
-  margin: 0 10px; /* Margin */
-  border: none; /* No border */
-  border-radius: 4px; /* Border radius */
-  background-color: #92afcd; /* Button background color */
-  color: #fff; /* Text color */
-  cursor: pointer; /* Cursor style */
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #92afcd;
+  color: #fff;
+  cursor: pointer;
   font-size: 18px;
 }
+
 
 .section-buttons button:hover {
   color: rgb(141, 73, 141);
 }
 
 .section-buttons button.active {
-  background-color: rgb(
-    72,
-    72,
-    117
-  ); /* Button background color for active state */
+  background-color: rgb(72, 72, 117);
 }
 
 .section-content {
-  text-align: left; /* Text alignment */
+  text-align: left; 
 }
 
 .section-title {
-  font-size: 24px; /* Font size */
-  margin-bottom: 10px; /* Margin bottom */
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
 .section-content p {
-  font-size: 18px; /* Font size */
+  font-size: 18px; 
   margin-top: 10px;
 }
 
@@ -270,7 +262,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
 }
 
 .formContainer {
@@ -303,7 +294,7 @@ form input {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  }
+}
 
 .register-button:hover,
 .login-button:hover,
@@ -334,11 +325,11 @@ form input {
   padding: 0;
 }
 
-.data-container li{
+.data-container li {
   margin-bottom: 15px;
 }
 
-.data-container h2{
+.data-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
