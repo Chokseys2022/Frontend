@@ -1,13 +1,13 @@
 # Blog Management System
 
-This project is a Blog Management System built with React and React Router for client-side routing. It allows users to view, manage, and search for blog content.
+My first ever MERN stack project. This a personal blog application built with React and React Router for client-side routing. It allows users to view, manage, and search for blog content.
 
 ## Features
 
 - **Client-side Routing:** Utilizes React Router for dynamic navigation between different pages without full page reloads.
 - **Blog Selection:** Browse different blog categories such as fitness, family, reflection, and food.
 - **Read Blogs:** View detailed content for each blog category with dynamic routing based on the selected article.
-- **Manage Blogs:** Administrators can manage blog content, including adding, editing, and deleting blog posts.
+- **Manage Blogs:** Administrators can view blog content, and add blog posts.
 - **Word Search:** Users can search for the definition of words using an integrated dictionary API.
 
 ## Technologies Used
@@ -30,7 +30,7 @@ This project is a Blog Management System built with React and React Router for c
 - **src/pages/:** Contains page components representing different views/routes of the application.
 - **Pages:**
 - Home.jsx
-  -SelectBlog.jsx
+- SelectBlog.jsx
 - ReadBlog.jsx
 - ManageBlog.jsx
 - WordSearch.jsx
@@ -45,7 +45,7 @@ This project is a Blog Management System built with React and React Router for c
 - Visit the homepage to get started.
 - Use the navigation links to explore different sections of the blog.
 - Read detailed content for each blog category by clicking on the respective links.
-- Administrators can access the management panel to manage blog content.
+- Administrators can access the management page to manage blog content.
 - Users can search for word definitions using the integrated dictionary.
 
 ## Credits
