@@ -1,11 +1,15 @@
+//imports 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";//for routing
 import FoodImage from "../images/food1.png";
 import FamilyImage from "../images/fam.png";
 import ReflectImage from "../images/ref.png";
 import FitnessImage from "../images/fit.png";
 import "../App.css"; 
 
+
+//funct to pick a section via a button to then navigate to open it in readblog page
+//used tailwind css for page layout
 function SelectBlog() {
   return (
     <div className="search-blog-container" style={{ backgroundColor: "#f0f0f0" }}>
@@ -13,7 +17,7 @@ function SelectBlog() {
 
       <div className="button-container">
         
-        <NavLink to={{ pathname: "/read/fitness", search: "?section=fitness" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/fitness" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FitnessImage} alt="fitness" />
@@ -27,7 +31,7 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to={{ pathname: "/read/family", search: "?section=fam-section" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/family" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={FamilyImage} alt="family" />
@@ -41,7 +45,7 @@ function SelectBlog() {
           </div>
         </NavLink>
 
-        <NavLink to={{ pathname: "/read/reflection", search: "?section=thought-section" }} className="blog-link">
+        <NavLink to={{ pathname: "/read/reflection" }} className="blog-link">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg image-container">
             <img className="w-full" my-4 src={ReflectImage} alt="reflection" />

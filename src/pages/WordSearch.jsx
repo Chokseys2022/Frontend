@@ -1,12 +1,15 @@
+//imports
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+//State variables for word input, word data, loading state, and error handling
 function WordSearch() {
   const [word, setWord] = useState("");
   const [wordData, setWordData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  //funct to fetch data using axios from an external API -https://dictionaryapi.dev/
   const fetchData = async () => {
     setLoading(true);
     setError(null); // Reset error state
@@ -14,31 +17,32 @@ function WordSearch() {
       const response = await axios.get(
         `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
       );
-      setWordData(response.data);
+      setWordData(response.data); //setting the word data with response from api
     } catch (error) {
-      console.error("Request failed:", error);
+      console.error("Request failed:", error); //error if it fails
       setError("Request failed. Please try again.");
     } finally {
-      setLoading(false);
+      setLoading(false); //loading state is set to false by default
     }
   };
 
+  //funct to manage form submisson
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault(); //prevent form default behaviour or reloading entire page
     if (word !== "") {
       fetchData();
     }
   };
-
+  //fuct to reset state
   const handleRefresh = () => {
     setWord("");
     setWordData(null);
     setError(null);
   };
-
+  //form specifics
   return (
     <div className="dictionary">
-      <h1 class="underline decoration-solid">Look up  Word Definition</h1>
+      <h1 class="underline decoration-solid">Look up Word Definition</h1>
       <br />
       <form onSubmit={handleSubmit}>
         <input
