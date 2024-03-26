@@ -8,7 +8,7 @@ import "../App.css";
 
 function SelectBlog() {
   return (
-    <div className="search-blog-container">
+    <div className="search-blog-container" style={{ backgroundColor: "#f0f0f0" }}>
       <h1> </h1>
 
       <div className="button-container">

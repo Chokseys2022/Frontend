@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Welcome from '../components/Welcome';
 import '../App.css';
+import backgroundImage from '../images/sea.png'; // Import your background image
 
-function App() {
+function Home() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div className="container">
-    <Welcome />
+      <Welcome />
       <div className="formContainer">
         <h2>Sign In</h2>
         {error && <div className="errorMessage">{error}</div>}
@@ -64,13 +65,13 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <button  className="sign-button">Sign In</button>
+          <button className="sign-button">Sign In</button>
         </form>
         <p>Already have an account?</p>
-        <button  className="login-button">Login</button>
+        <button className="login-button">Login</button>
       </div>
     </div>
   );
 }
 
-export default App;
+export default Home;

@@ -1,7 +1,8 @@
 /* Body styles */
 body {
-  font-family: Arial, sans-serif; 
-  background-color: #f4f4f4; 
+  background-image: url('./images/sea.png');
+  background-size: cover;
+  /* Add any additional styles you need */
 }
 
 /* Container */
