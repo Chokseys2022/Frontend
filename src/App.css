@@ -60,7 +60,7 @@ body {
 }
 
 .navbar ul li a {
-  color: black; /* Link text color */
+  color: rgb(75, 73, 123); /* Link text color */
   text-decoration: none; /* Remove underline from links */
   font-size: 18px; /* Font size for links */
 }
@@ -72,7 +72,7 @@ body {
 /* Footer Styles */
 .footer {
   background-color: rgba(0, 0, 0, 0); /* Background color */
-  color: black; /* Text color */
+  color: rgb(75, 73, 123);
   font-size: 18px;
   padding: 3px; /* Padding */
   padding-left: 20px;
@@ -89,6 +89,7 @@ body {
   padding: 30px;
   border: 7px solid #ccc;
   border-radius: 5px;
+  background-color: rgba(249, 249, 249, 0.4);
 }
 
 .dictionary-container {
@@ -189,6 +190,7 @@ body {
   max-width: 1000px; /* Maximum width */
   margin: 0 auto; /* Center align */
   padding: 20px; /* Padding */
+  border: 7px solid rgba(204, 204, 204, 0.3);
 }
 
 .blog-title {
@@ -242,6 +244,7 @@ body {
 /*welcome page*/
 .welcomeContainer {
   background-color: #f0f0f0;
+  border: 7px solid rgba(204, 204, 204, 0.2);
   padding: 20px;
   padding-right: 50px;
   border-radius: 8px;
@@ -267,6 +270,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  
 }
 
 .formContainer {

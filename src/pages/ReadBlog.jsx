@@ -256,7 +256,7 @@ const ReadBlog = () => {
 
   return (
     <div className="read-blog-container">
-      <h1 className="blog-title">READ BLOG</h1>
+      
       <div className="section-buttons">
         <button
           onClick={() => setSelectedSection("fitness")}
