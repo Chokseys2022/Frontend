@@ -1,64 +1,105 @@
-//ManageBlog.jsx
-//imports
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-//state variables to manage blog data, loading and error state
 const ManageBlog = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({
+    title: "",
+    content: "",
+    author: ""
+  });
 
   useEffect(() => {
-    //funct to fetch data from mongodb
     const fetchBlogData = async () => {
       try {
-        //GET request to fetch data using axios
         const response = await axios.get("http://localhost:3000/blogData");
-        //update blog state with data that is fetched
         setBlogs(response.data);
-        //false if data fetched
         setLoading(false);
       } catch (error) {
-        //handle error if fetching the data fails
         console.error("Error fetching blog data:", error);
-        console.log(error);
         setError("Error fetching blog data! Please try again later.");
-        //false if data fetch fails
         setLoading(false);
       }
     };
-    //call this when page mounts
     fetchBlogData();
-  }, []); //empty dependency - ensures effect runs just once after intitial render
+  }, []);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:3000/blogData", formData);
+      // Assuming successful submission, clear form data and refetch blogs
+      setFormData({
+        title: "",
+        content: "",
+        author: ""
+      });
+      fetchBlogData();
+    } catch (error) {
+      console.error("Error posting blog data:", error);
+      setError("Error posting blog data! Please try again later.");
+    }
+  };
 
   return (
     <div className="manage-blog-container">
-      {loading ? (
-        <p>Loading...</p>
-      ) : error ? (
-        <p>{error}</p>
-      ) : (
-        <ul>
-          {blogs.map((blog) => (
-            <li key={blog._id}>
-              <h2 style={{ fontWeight: "bold", textDecoration: "underline" }}>
-                {blog.title}
-              </h2>
-              <br />
-              <p>{blog.content}</p>
-              <br />
-              <p> Author name: {blog.author}</p>
-              <br />
-              <p>Date: {blog.entryDate}</p>
-              <br />
-            </li>
-          ))}
-        </ul>
-      )}
+      <h1>Manage Blogs</h1>
+      <hr />
+      <div className="blog-list">
+        {loading ? (
+          <p>Loading...</p>
+        ) : error ? (
+          <p>{error}</p>
+        ) : (
+          <ul>
+            {blogs.map((blog) => (
+              <li key={blog._id}>
+                <h2 className="blog-title">{blog.title}</h2>
+                <p className="blog-content">{blog.content}</p>
+                <p className="blog-author">Author: {blog.author}</p>
+                <p className="blog-date">Date: {blog.entryDate}</p>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <div className="add-blog-form">
+        <h2>Add New Blog</h2>
+        <form onSubmit={handleSubmit}>
+          <label>Title:</label>
+          <input
+            type="text"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+          />
+          <label>Content:</label>
+          <textarea
+            name="content"
+            value={formData.content}
+            onChange={handleChange}
+          ></textarea>
+          <label>Author:</label>
+          <input
+            type="text"
+            name="author"
+            value={formData.author}
+            onChange={handleChange}
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
 
 export default ManageBlog;
-//-----------------------------------------END CODE-----------------------------------------//
