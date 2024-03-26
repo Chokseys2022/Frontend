@@ -10,6 +10,14 @@ My first ever MERN stack project. This a personal blog application built with Re
 - **Manage Blogs:** Administrators can view blog content, and add blog posts.
 - **Word Search:** Users can search for the definition of words using an integrated dictionary API.
 
+## Usage
+
+- Visit the homepage to get started.
+- Use the navigation links to explore different sections of the blog.
+- Read detailed content for each blog category by clicking on the respective links.
+- Administrators can access the management page to manage blog content.
+- Users can search for word definitions using the integrated dictionary.
+
 ## Technologies Used
 
 - **React:** A JavaScript library for building user interfaces.
@@ -23,7 +31,7 @@ My first ever MERN stack project. This a personal blog application built with Re
 ## File Structure
 
 - **public/:** Contains the index.html file and other static assets.
-- **src/components/:** Contains React components used across the application. 
+- **src/components/:** Contains React components used across the application.
 - **Components**
 - Header.jsx
 - Footer.jsx
@@ -40,20 +48,18 @@ My first ever MERN stack project. This a personal blog application built with Re
 - **package.json:** Contains project metadata and dependencies.
 - **README.md:** The README file with project information and instructions.
 
-## Usage
-
-- Visit the homepage to get started.
-- Use the navigation links to explore different sections of the blog.
-- Read detailed content for each blog category by clicking on the respective links.
-- Administrators can access the management page to manage blog content.
-- Users can search for word definitions using the integrated dictionary.
-
 ## Credits
+
 - Canva for SelectBlog page images
 - [Tailwindfor CSS ](https://tailwindcss.com/)for SeleactBlog page layout
 - https://dictionaryapi.dev/ for WordSearch page
 - HomePage image - Sonal Choksey
 
+## Backend Repo Link
+
+- https://github.com/Chokseys2022/Backend
+
 ### What I would change:
+
 - Implement CRUD Capabilities
 - Sign-In with Validation
