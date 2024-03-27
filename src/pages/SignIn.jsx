@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function SignInForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  // State variables to store form input values and error message
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    // Simple validation
+    e.preventDefault();// Prevent default form submission behavior
+    // ensure all fields are filled
     if (!name || !email || !password) {
-      setError('Please fill in all fields');
-      return;
+      setError("Please fill in all fields");
+      return;//exit if validation fails
     }
-    // Your form submission logic here (e.g., API call)
+//if val success-log form data
     console.log("Form submitted:", { name, email, password });
-    // Reset form fields after successful registration
-    setName('');
-    setEmail('');
-    setPassword('');
-    setError('');
-  }
+    // Reset form after successful registration
+    setName("");
+    setEmail("");
+    setPassword("");
+    setError("");
+  };
 
   return (
     <div className="formContainer">
@@ -69,3 +70,4 @@ function SignInForm() {
 }
 
 export default SignInForm;
+//-----------------------------END CODE--------------------------------//
