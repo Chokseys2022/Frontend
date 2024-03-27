@@ -2,18 +2,18 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
 import SelectBlog from "./SelectBlog";
-import { useParams } from "react-router-dom";//useParams hook to access parameters set in selectblog page
+import { useParams } from "react-router-dom"; //useParams hook to access parameters set in selectblog page
 
 const ReadBlog = () => {
   //state to track slected section
   const [selectedSection, setSelectedSection] = useState("");
-  let { article } = useParams();//get article parameter from selectblog page to access particular section
+  let { article } = useParams(); //get article parameter from selectblog page to access particular section
 
   useEffect(() => {
-    setSelectedSection(article);//Set selectedSection state when component mounts
+    setSelectedSection(article); //Set selectedSection state when component mounts
   }, []); //empty dependency - ensures effect runs just once after intitial render
 
-//funct to render content based on button click from selecyt blog page
+  //funct to render content based on button click from selecyt blog page
   const renderContent = () => {
     switch (selectedSection) {
       case "fitness":
@@ -257,7 +257,6 @@ const ReadBlog = () => {
 
   return (
     <div className="read-blog-container">
-      
       <div className="section-buttons">
         <button
           onClick={() => setSelectedSection("fitness")}

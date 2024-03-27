@@ -36,8 +36,8 @@ const ManageBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/blogData", formData);
-      // Assuming successful submission, clear form data and refetch blogs
+      await axios.post("http://localhost:3000", formData);
+      // clear form data and refetch blogs
       setFormData({
         title: "",
         content: "",
