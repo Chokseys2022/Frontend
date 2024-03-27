@@ -8,7 +8,7 @@ const ManageBlog = () => {
   const [formData, setFormData] = useState({
     title: "",
     content: "",
-    author: ""
+    author: "",
   });
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const ManageBlog = () => {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -41,7 +41,7 @@ const ManageBlog = () => {
       setFormData({
         title: "",
         content: "",
-        author: ""
+        author: "",
       });
       fetchBlogData();
     } catch (error) {
@@ -52,7 +52,6 @@ const ManageBlog = () => {
 
   return (
     <div className="manage-blog-container">
-      <h1>Manage Blogs</h1>
       <hr />
       <div className="blog-list">
         {loading ? (
