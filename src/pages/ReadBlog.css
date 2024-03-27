@@ -3,6 +3,7 @@
 body {
     background-color: #f0f0f0; /* Set your desired background color */
   }
-  /*-----------------------------------------END CODE-----------------------------------------*/
+  
+
   /* separated css for this page since tailwind messed up background image layout for home page, 
   so this overides tailwind default style */

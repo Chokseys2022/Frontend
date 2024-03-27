@@ -43,7 +43,7 @@ const ManageBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000", formData); //send POST req
+      await axios.post("http://localhost:3000/seeds/blogData", formData); //send POST req
       // clear form data and refetch blogs
       setFormData({
         title: "",
@@ -112,4 +112,4 @@ const ManageBlog = () => {
 
 export default ManageBlog;
 
-//-----------------------------END CODE----------------------------//
+//----------------------------------------END CODE-------------------------------------//
