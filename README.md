@@ -55,7 +55,7 @@ My first ever MERN stack project. This a personal blog application built with Re
 - https://dictionaryapi.dev/ for WordSearch page
 - HomePage image - Sonal Choksey
 
-## Backend Repo Link
+## Link to Backend Application Repo on GitHub
 
 - https://github.com/Chokseys2022/Backend
 
